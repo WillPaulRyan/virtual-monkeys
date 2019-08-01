@@ -32,24 +32,24 @@
         </div>
       </noscript>
       <br>
-      <p class="text-center"><strong>Monkey mode</strong> | <a href="./single.html">Single-character mode</a></p>
+      <p class="text-center"><a href="./index.html">Monkey mode</a> | <strong>Single-character mode</strong></p>
       <form>
         <div class="form-row justify-content-center">
-          <div class="col-auto">
+          <div class="col-10">
             <label class="sr-only" for="input">Input</label>
-            <input onkeyup="moveText()" type="text" class="form-control mb-2" id="input" placeholder="Type here" autocomplete="off">
+            <input onkeyup="moveText()" type="text" class="form-control mb-2" placeholder="Type here" autocomplete="off" id="input">
           </div>
           <div class="col-auto">
             <button type="reset" class="btn btn-primary mb-2" id="clear">Clear</button>
           </div>
         </div>
         <div class="form-row justify-content-center">
-          <div class="col-auto">
+          <div class="col-10">
             <label class="sr-only" for="output">Output</label>
-            <input type="text" class="form-control form-control-plaintext mb-2" id="output" placeholder="Randomized text" disabled>
+            <input type="text" class="form-control form-control-plaintext mb-2" placeholder="Randomized text" id="output" disabled>
           </div>
           <div class="col-auto">
-            <button onclick="monkeys()" type="button" class="btn btn-primary mb-2">Strum</button>
+            <button onclick="monkeySingle()" type="button" class="btn btn-primary mb-2">Strum</button>
           </div>
         </div>
         <div>
